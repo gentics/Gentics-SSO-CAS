@@ -55,6 +55,19 @@
 			<groupId>com.gentics</groupId>
 			<version>4.1.0-dev-SNAPSHOT</version>
 		</dependency>
+		<!-- This webapp uses jsp so we need the jstl -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+			<scope>provided</scope>
+		</dependency>
+		<!-- standard.jar -->
+		<dependency>
+			<groupId>taglibs</groupId>
+			<artifactId>standard</artifactId>
+			<version>1.1.2</version>
+		</dependency>
 	</dependencies>
 
 	<build>
