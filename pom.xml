@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<artifactId>gentics-sso-package</artifactId>
+	<groupId>com.gentics</groupId>
+	<version>1.0.0-SNAPSHOT</version>
+
+	<name>Gentics SingleSignOn Package Root</name>
+	<packaging>pom</packaging>
+	<description>This is the gentics-sso-package root</description>
+	<url>http://www.gentics.com/</url>
+
+	<modules>
+		<module>cas-server</module>
+		<module>cas-client-gpn</module>
+		<module>cas-client</module>
+	</modules>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.build.timestamp.format>yyyyMMdd-HHmmss</maven.build.timestamp.format>
+		<mavenRootBuildTimestamp>${maven.build.timestamp}</mavenRootBuildTimestamp>
+	</properties>
+
+	<distributionManagement>
+		<repository>
+			<id>archiva.com.gentics.internal</id>
+			<name>Gentics Internal Repository</name>
+			<url>http://archiva.gentics.com:8081/archiva/repository/com.gentics.internal</url>
+		</repository>
+		<snapshotRepository>
+			<id>archiva.com.gentics.internal</id>
+			<name>Gentics Internal Repository</name>
+			<url>http://archiva.gentics.com:8081/archiva/repository/com.gentics.internal</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+</project>

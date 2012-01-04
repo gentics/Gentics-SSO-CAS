@@ -1,0 +1,4 @@
+<!-- tomcat specific deployment information -->
+<Context reloadable="true" path="/cas-client-gpn">
+	<Manager pathname="" className="org.apache.catalina.session.StandardManager"/>
+</Context>

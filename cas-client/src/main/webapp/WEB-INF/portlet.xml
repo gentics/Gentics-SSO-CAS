@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portlet-app xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd"
+	version="1.0">
+	<portlet>
+		<portlet-name>CASLoginPortlet</portlet-name>
+		<portlet-class>
+			com.gentics.labs.sso.cas.client.portlet.CASLoginPortlet
+		</portlet-class>
+		<supports>
+			<mime-type>text/html</mime-type>
+		</supports>
+		<portlet-info>
+			<title>CASLoginPortlet</title>
+		</portlet-info>
+		<portlet-preferences>
+			<preference>
+				<!-- The full URL to the CAS Server web application. -->
+				<name>casServerUrlPrefix</name>
+				<value>http://localhost:42880/cas-server</value>
+			</preference>
+		</portlet-preferences>
+	</portlet>
+</portlet-app>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portlet-app xmlns="http://www.gentics.com/gentics-portlet-app">
+	<portlet>
+		<portlet-name>PasswordChangePortlet</portlet-name>
+		<start-parameters>
+			<parameter name="token_obj_type">50009</parameter>
+			<parameter name="user_obj_type">50000</parameter>
+			<parameter name="user_name_attribute">username</parameter>
+			<parameter name="user_passwordchange_attribute">passwordChangeDate</parameter>
+			<parameter name="user_password_attribute">password</parameter>
+		</start-parameters>
+	</portlet>
+</portlet-app>
