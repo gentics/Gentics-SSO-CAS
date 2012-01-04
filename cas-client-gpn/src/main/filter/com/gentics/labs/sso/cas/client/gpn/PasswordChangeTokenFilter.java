@@ -24,38 +24,22 @@ import com.gentics.portalnode.portal.PortalWrapper;
  * this has to be the first servlet filter - before AuthenticationFilter of CAS
  * 
  * 
- * 	  <filter>
-	  	<filter-name>Password Change Token Generator</filter-name>
-	  	<filter-class>com.gentics.labs.sso.cas.client.gpn.PasswordChangeTokenFilter</filter-class>
-	  	<init-param>
-	  		<param-name>secret</param-name>
-	  		<param-value>verySecret</param-value>
-	  	</init-param>
-	  	<init-param>
-	  		<param-name>datasource</param-name>
-	  		<param-value>ers</param-value>
-	  	</init-param>
-	  	<init-param>
-	  		<param-name>token_obj_type</param-name>
-	  		<param-value>30000</param-value>
-	  	</init-param>
-	  </filter>
-	  
-	  <filter-mapping>
-	  	<filter-name>Password Change Token Generator</filter-name>
-	  	<url-pattern>/*</url-pattern>
-	  </filter-mapping>
+ * <filter> <filter-name>Password Change Token Generator</filter-name>
+ * <filter-class>com.gentics.labs.sso.cas.client.gpn.PasswordChangeTokenFilter</filter-class> <init-param> <param-name>secret</param-name>
+ * <param-value>verySecret</param-value> </init-param> <init-param> <param-name>datasource</param-name> <param-value>ers</param-value>
+ * </init-param> <init-param> <param-name>token_obj_type</param-name> <param-value>30000</param-value> </init-param> </filter>
+ * 
+ * <filter-mapping> <filter-name>Password Change Token Generator</filter-name> <url-pattern>/*</url-pattern> </filter-mapping>
  * 
  * @author herbert
  */
 public class PasswordChangeTokenFilter implements Filter {
 	private static NodeLogger logger = NodeLogger.getNodeLogger(PasswordChangeTokenFilter.class);
-	
+
 	private static final String REQUEST_PARAMETER = "GENTICS_FETCHPWTOKEN";
 	private String checkSecret = null;
 	private String datasourceName;
 	private Integer tokenObjType;
-	
 
 	private Random randomGenerator = new Random();
 
@@ -68,8 +52,7 @@ public class PasswordChangeTokenFilter implements Filter {
 	public void destroy() {
 	}
 
-	public void doFilter(ServletRequest req, ServletResponse res,
-			FilterChain chain) throws IOException, ServletException {
+	public void doFilter(ServletRequest req, ServletResponse res, FilterChain chain) throws IOException, ServletException {
 		if (req.getParameter(REQUEST_PARAMETER) != null) {
 			WriteableDatasource ds = (WriteableDatasource) PortalWrapper.getInstance().createDatasource(datasourceName);
 			String username = req.getParameter("username");
@@ -84,7 +67,7 @@ public class PasswordChangeTokenFilter implements Filter {
 				res.getWriter().println("No username given in request url.");
 				return;
 			}
-			
+
 			String token = Long.toHexString(randomGenerator.nextLong());
 			Map tokenStore = new HashMap();
 			tokenStore.put("token", token);
