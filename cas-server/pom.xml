@@ -20,8 +20,8 @@
 		<m2eclipse.wtp.contextRoot>cas-server</m2eclipse.wtp.contextRoot>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.build.timestamp.format>yyyyMMdd-HHmmss</maven.build.timestamp.format>
+		<cas.config>config/gtx</cas.config>
 	</properties>
-
 
 	<dependencies>
 		<dependency>
@@ -60,6 +60,20 @@
 					<maxmem>1024m</maxmem>
 				</configuration>
 			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.1.1</version>
+				<configuration>
+					<webResources>
+						<resource>
+							<directory>${cas.config}</directory>
+						</resource>
+					</webResources>
+				</configuration>
+			</plugin>
+
 		</plugins>
 	</build>
 
