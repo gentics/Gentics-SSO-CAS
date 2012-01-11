@@ -17,28 +17,28 @@ import org.jasig.cas.client.util.AbstractCasFilter;
 
 /**
  * Filter for reauthentication - works together with the {@link ReauthenticationHelper}
+ * 
  * @author herbert
  */
 public class ReauthenticationHelperFilter implements Filter {
-	
+
 	private static String SESSION_ATTR_REAUTH = "com.gentics.labs.sso.cas.client.gpn.reauthids";
 
 	public void destroy() {
 	}
 
-	public void doFilter(ServletRequest req, ServletResponse res,
-			FilterChain chain) throws IOException, ServletException {
+	public void doFilter(ServletRequest req, ServletResponse res, FilterChain chain) throws IOException, ServletException {
 		final String reauthId = req.getParameter(ReauthenticationHelper.REAUTH_ID_PARAMETER);
 		if (!(req instanceof HttpServletRequest)) {
 			throw new IllegalArgumentException("ReauthenticationHelperFilter only works for http servlet requests.");
 		}
-		HttpServletRequest httpRequest = ((HttpServletRequest)req);
+		HttpServletRequest httpRequest = ((HttpServletRequest) req);
 		StringBuffer requestURL = httpRequest.getRequestURL();
 		String queryString = httpRequest.getQueryString();
 		if (queryString != null) {
 			requestURL.append('?').append(queryString);
 		}
-		
+
 		HttpSession session = httpRequest.getSession(true);
 		List allowedIds = null;
 		try {

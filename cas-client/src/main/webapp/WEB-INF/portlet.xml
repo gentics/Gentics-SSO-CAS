@@ -3,9 +3,7 @@
 	version="1.0">
 	<portlet>
 		<portlet-name>CASLoginPortlet</portlet-name>
-		<portlet-class>
-			com.gentics.labs.sso.cas.client.portlet.CASLoginPortlet
-		</portlet-class>
+		<portlet-class>com.gentics.labs.sso.cas.client.portlet.CASLoginPortlet</portlet-class>
 		<supports>
 			<mime-type>text/html</mime-type>
 		</supports>
@@ -16,7 +14,7 @@
 			<preference>
 				<!-- The full URL to the CAS Server web application. -->
 				<name>casServerUrlPrefix</name>
-				<value>http://localhost:42880/cas-server</value>
+				<value>${casServerUrlPrefix}</value>
 			</preference>
 		</portlet-preferences>
 	</portlet>

@@ -60,7 +60,9 @@ public class CASLoginPortlet extends GenericPortlet {
             return;
         }
         
-        if (request.getUserPrincipal() != null) {
+        boolean loggedIn = request.getUserPrincipal() != null;
+        
+        if (loggedIn) {
             // we are already logged in. no need to display login form.
             PortletRequestDispatcher dispatcher = getPortletContext().getRequestDispatcher("/views/loggedin.jsp");
             

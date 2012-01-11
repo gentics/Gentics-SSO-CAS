@@ -13,6 +13,7 @@
 
 	<modules>
 		<module>cas-server</module>
+		<module>cas-gentics-filter</module>
 		<module>cas-client-gpn</module>
 		<module>cas-client</module>
 	</modules>
