@@ -22,6 +22,9 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.build.timestamp.format>yyyyMMdd-HHmmss</maven.build.timestamp.format>
 		<mavenRootBuildTimestamp>${maven.build.timestamp}</mavenRootBuildTimestamp>
+		<!-- CAS Versions -->
+		<jasig.cas.server.version>3.3.3</jasig.cas.server.version>
+		<jasig.cas.client.version>3.1.4</jasig.cas.client.version>
 	</properties>
 
 	<distributionManagement>

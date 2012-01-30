@@ -32,13 +32,13 @@
 		<dependency>
 			<groupId>org.jasig.cas</groupId>
 			<artifactId>cas-server-core</artifactId>
-			<version>3.3.3</version>
+			<version>${jasig.cas.server.version}</version>
 			<type>jar</type>
 		</dependency>
 		<dependency>
 			<groupId>org.jasig.cas</groupId>
 			<artifactId>cas-server-support-jdbc</artifactId>
-			<version>3.3.3</version>
+			<version>${jasig.cas.server.version}</version>
 			<type>jar</type>
 		</dependency>
 		<dependency>
@@ -49,7 +49,7 @@
 		<dependency>
 			<groupId>org.jasig.cas</groupId>
 			<artifactId>cas-client-core</artifactId>
-			<version>3.1.4</version>
+			<version>${jasig.cas.client.version}</version>
 		</dependency>
 		<dependency>
 			<artifactId>node-lib</artifactId>

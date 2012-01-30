@@ -25,7 +25,7 @@
 		<dependency>
 			<groupId>org.jasig.cas</groupId>
 			<artifactId>cas-client-core</artifactId>
-			<version>3.1.4</version>
+			<version>${jasig.cas.client.version}</version>
 		</dependency>
 		
 		<dependency>
@@ -49,7 +49,6 @@
 			<groupId>com.gentics</groupId>
 			<version>4.1.0-dev-SNAPSHOT</version>
 		</dependency>
-		
 		
 	</dependencies>
 

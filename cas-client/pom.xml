@@ -10,7 +10,6 @@
 	</parent>
 
 	<artifactId>cas-client</artifactId>
-
 	<name>Gentics SSO Package - CAS Client</name>
 	<description>This is the cas client module</description>
 	<url>http://www.gentics.com</url>
@@ -20,9 +19,7 @@
 		<m2eclipse.wtp.contextRoot>cas-client</m2eclipse.wtp.contextRoot>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.build.timestamp.format>yyyyMMdd-HHmmss</maven.build.timestamp.format>
-
 		<casServerUrlPrefix>http://localhost:8088/cas-server</casServerUrlPrefix>
-
 	</properties>
 
 	<dependencies>
