@@ -50,9 +50,7 @@ public class AuthenticationFilterHelper implements Filter {
 	        
 		
 		if (!ignoreFilter) {
-		
 			casFilter.doFilter(req, res, filterChain);
-			
 		}
 		
 
