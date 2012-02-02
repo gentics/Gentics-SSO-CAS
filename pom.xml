@@ -14,8 +14,8 @@
 	<modules>
 		<module>cas-server</module>
 		<module>cas-gentics-filter</module>
-		<module>cas-client-gpn</module>
-		<module>cas-client</module>
+		<module>cas-client-gpn-webapp</module>
+		<module>cas-client-simple-webapp</module>
 	</modules>
 
 	<properties>

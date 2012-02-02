@@ -9,7 +9,7 @@
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>cas-client</artifactId>
+	<artifactId>cas-client-simple-webapp</artifactId>
 	<name>Gentics SSO Package - CAS Client</name>
 	<description>This is the cas client module</description>
 	<url>http://www.gentics.com</url>

@@ -9,7 +9,7 @@
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>cas-client-gpn</artifactId>
+	<artifactId>cas-client-gpn-webapp</artifactId>
 
 	<name>Gentics SSO Package - CAS Client GPN</name>
 	<description>This is the cas client gpn module</description>
