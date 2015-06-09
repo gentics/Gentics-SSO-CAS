@@ -20,6 +20,7 @@
 	</modules>
 
 	<properties>
+		<portalnode.version>4.6.0</portalnode.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.build.timestamp.format>yyyyMMdd-HHmmss</maven.build.timestamp.format>
 		<mavenRootBuildTimestamp>${maven.build.timestamp}</mavenRootBuildTimestamp>
@@ -28,17 +29,41 @@
 		<jasig.cas.client.version>3.1.4</jasig.cas.client.version>
 	</properties>
 
+	<repositories>
+		<repository>
+			<id>maven.gentics.com</id>
+			<name>Gentics Maven Repository</name>
+			<url>https://maven.gentics.com/maven2</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>maven2</id>
+			<name>Maven 2 Repository</name>
+			<url>http://repo2.maven.org/maven2</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
 
 	<distributionManagement>
 		<repository>
-			<id>archiva.lan.testing</id>
+			<id>artifactory.lan.testing</id>
 			<name>Gentics Releases Repository</name>
-			<url>http://archiva-mirror.office:8080/archiva/repository/testing-stage</url>
+			<url>http://artifactory.office/repository/testing-stage</url>
 		</repository>
 		<snapshotRepository>
-			<id>archiva.lan.snapshots</id>
+			<id>artifactory.lan.snapshots</id>
 			<name>Gentics Snapshots Repository</name>
-			<url>http://archiva-mirror.office:8080/archiva/repository/snapshots</url>
+			<url>http://artifactory.office/repository/snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
 

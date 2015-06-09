@@ -43,7 +43,7 @@
 			<version>${cas.version}</version>
 			<type>jar</type>
 		</dependency>
-		
+
 		<!-- Provided dependencies -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -94,19 +94,4 @@
 
 		</plugins>
 	</build>
-
-	<repositories>
-		<repository>
-			<id>maven2</id>
-			<name>Maven 2 Repository</name>
-			<url>http://repo2.maven.org/maven2</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</repository>
-	</repositories>
-
 </project>
