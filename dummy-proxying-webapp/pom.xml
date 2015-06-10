@@ -50,20 +50,4 @@
 		</dependency>
 
 	</dependencies>
-
-	<repositories>
-		<repository>
-			<id>archiva.com.gentics.internal</id>
-			<name>Archiva Managed Internal Repository</name>
-			<url>http://archiva.gentics.com:8081/archiva/repository/com.gentics.internal/
-			</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</repository>
-	</repositories>
-
 </project>

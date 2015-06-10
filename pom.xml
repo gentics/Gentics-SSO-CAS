@@ -31,9 +31,9 @@
 
 	<repositories>
 		<repository>
-			<id>maven.gentics.com</id>
-			<name>Gentics Maven Repository</name>
-			<url>https://maven.gentics.com/maven2</url>
+			<id>maven2</id>
+			<name>Maven 2 Repository</name>
+			<url>http://repo2.maven.org/maven2</url>
 			<releases>
 				<enabled>true</enabled>
 			</releases>
@@ -42,9 +42,9 @@
 			</snapshots>
 		</repository>
 		<repository>
-			<id>maven2</id>
-			<name>Maven 2 Repository</name>
-			<url>http://repo2.maven.org/maven2</url>
+			<id>maven.gentics.com</id>
+			<name>Gentics Maven Repository</name>
+			<url>https://maven.gentics.com/maven2</url>
 			<releases>
 				<enabled>true</enabled>
 			</releases>

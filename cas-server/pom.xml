@@ -20,27 +20,26 @@
 		<m2eclipse.wtp.contextRoot>cas-server</m2eclipse.wtp.contextRoot>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.build.timestamp.format>yyyyMMdd-HHmmss</maven.build.timestamp.format>
-		<cas.config>config/gtx</cas.config>
-		<cas.version>3.3.3</cas.version>
+		<cas.config>config/ldaptest</cas.config>
 	</properties>
 
 	<dependencies>
 		<dependency>
 			<groupId>org.jasig.cas</groupId>
 			<artifactId>cas-server-webapp</artifactId>
-			<version>${cas.version}</version>
+			<version>${jasig.cas.server.version}</version>
 			<type>war</type>
 		</dependency>
 		<dependency>
 			<groupId>org.jasig.cas</groupId>
 			<artifactId>cas-server-core</artifactId>
-			<version>${cas.version}</version>
+			<version>${jasig.cas.server.version}</version>
 			<type>jar</type>
 		</dependency>
 		<dependency>
 			<groupId>org.jasig.cas</groupId>
 			<artifactId>cas-server-support-jdbc</artifactId>
-			<version>${cas.version}</version>
+			<version>${jasig.cas.server.version}</version>
 			<type>jar</type>
 		</dependency>
 
@@ -94,4 +93,5 @@
 
 		</plugins>
 	</build>
+
 </project>
